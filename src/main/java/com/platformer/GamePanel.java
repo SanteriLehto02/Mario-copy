@@ -200,11 +200,11 @@ public class GamePanel extends JPanel implements Runnable {
         playerY += jumpSpeed;
         jumpSpeed += gravity;
         if (playerY >= screenHeight - 148 || isOnGround(playerX, playerY + 1)) {
-            System.out.println("hyppy");
+            
             playerY = getGroundLevel(playerX, playerY);
             
             System.out.println(getGroundLevel(playerX, playerY));
-            System.out.println("?");
+            
             jumpSpeed = 0; // Reset jump speed
             isJumping = false; // Stop jumping
         }
@@ -213,7 +213,7 @@ public class GamePanel extends JPanel implements Runnable {
     public void update() {
         if (levelpassed) {
             if (keyH.spacePressed) {
-                System.out.println("space");
+                
                 // Add logic to continue to the next level
                 levelpassed = false; // Reset the flag
                 playerX = 100;
@@ -223,7 +223,7 @@ public class GamePanel extends JPanel implements Runnable {
         }
         if(lifes == 0){
             if (keyH.spacePressed) {
-                System.out.println("space");
+                
                 lifes = 1;
                 playerX = 100; 
                 currentLevel = 1;
@@ -430,7 +430,7 @@ public class GamePanel extends JPanel implements Runnable {
         for (Pipe pipe : levelPipes.get(currentLevel - 1)) {
             Rectangle pipeBounds = new Rectangle(pipe.x, pipe.y, pipe.width+5, pipe.height);
             if (new Rectangle(x+tileSize/2-10, y + tileSize, 20, 1).intersects(pipeBounds)) {
-                System.out.println("fdsfdsfdsf");
+                
                 return true;
             }
         }
@@ -506,7 +506,7 @@ public class GamePanel extends JPanel implements Runnable {
         for (Pipe pipe : levelPipes.get(currentLevel - 1)) {
             Rectangle pipeBounds = new Rectangle(pipe.x+10, pipe.y, pipe.width-14, pipe.height-30);
             if (playerBounds.intersects(pipeBounds)) {
-                System.out.println("ääää");
+
                 return true;
             }
         }
