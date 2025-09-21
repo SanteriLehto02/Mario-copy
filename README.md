@@ -22,13 +22,13 @@ This is a Mario-style 2D platformer built in Java using Swing. The game features
 ## 📸 Screenshots
 
 ### Start of new run  
-![Welcome](screenshots/start.PNG)
+![Welcome](screenshot/start.PNG)
 
 ### In-Game  
-![Gameplay](screenshots/goomba.PNG)
+![Gameplay](screenshot/goomba.PNG)
 
 ### End of a level 
-![Gameplay](screenshots/end.PNG)
+![Gameplay](screenshot/end.PNG)
 
 ---
 
