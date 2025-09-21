@@ -15,7 +15,7 @@ This is a Mario-style 2D platformer built in Java using Swing. The game features
 - ❤️ Lives system (Game Over if lives = 0)
 - 🎯 End-of-level goal
 - 📷 Side-scrolling camera
-- ⌨️ Keyboard controls (arrow keys + space)
+- ⌨️ Keyboard controls (wasd + space)
 
 ---
 
@@ -45,8 +45,8 @@ This is a Mario-style 2D platformer built in Java using Swing. The game features
 
 | Key       | Action         |
 |-----------|----------------|
-| ← / →     | Move Left / Right |
-| ↑         | Jump           |
+| a / d     | Move Left / Right |
+| w         | Jump           |
 | Space     | Continue to next level / Restart after death |
 
 ---
